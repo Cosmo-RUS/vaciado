@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vaciado</title><meta name="theme-color" content="#EDF1EE">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon-192.png"><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<form id="f"><input id="t" autocomplete="off" enterkeyhint="done" placeholder="¿Qué tienes en la cabeza?" aria-label="Capturar" autofocus>
+<p class="hint">Enter guarda. Entiende «mañana 5pm», «viernes», «45min», «todos los días».</p></form>
+<button id="foco">Modo foco</button>
+<section><h2>Hoy <span id="nh"></span></h2><ul id="sh"></ul><div id="tl"></div></section>
+<section><h2>Bandeja <span id="nb"></span></h2><ul id="bandeja"></ul></section>
+<section id="sd"><h2>Después <span id="nd"></span></h2><ul id="despues"></ul></section>
+<footer><button id="x">Exportar</button><label class="btn">Importar<input id="i" type="file" accept="application/json" hidden></label><button id="ic">Calendario .ics</button><button id="c">Limpiar hechos</button></footer>
+<input id="p" type="time" class="oculto" tabindex="-1" aria-hidden="true">
+</main>
+<div id="fo" hidden><p id="fk"></p><h1 id="ft"></h1><p id="fc"></p><div id="fb"><i></i></div><button id="fh"></button><button id="fs">Cerrar</button></div>
+<script src="app.js"></script></body></html>
